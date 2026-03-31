@@ -196,7 +196,7 @@
     flex-shrink: 0;
   }
 
-  .card.featured .features li { color: #d0e6db; }
+  .card.featured .features li { color: #000000; }
   .card.featured .features li::before { color: var(--sun); }
 
   .pricing {
@@ -358,6 +358,69 @@
     flex-shrink: 0;
   }
 
+  /* Payment Section */
+  .payment-section {
+    margin-top: 28px;
+    animation: riseUp 0.7s 0.85s ease both;
+  }
+
+  .payment-card {
+    background: white;
+    border: 1.5px solid #deeae4;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 12px;
+  }
+
+  .payment-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+  }
+
+  .payment-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #8aab97;
+  }
+
+  .payment-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .payment-value.highlight {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: var(--leaf);
+    letter-spacing: 0.05em;
+  }
+
+  .payment-divider {
+    height: 1px;
+    background: #edf4f0;
+    margin: 0 18px;
+  }
+
+  .payment-note {
+    background: #e8f4f0;
+    border: 1.5px solid #c2d5c9;
+    border-radius: 12px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: #2a5040;
+    line-height: 1.5;
+  }
+
+  .payment-note .icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
   /* Footer */
   .footer {
     text-align: center;
@@ -507,6 +570,31 @@
       <div class="module-chip"><span class="dot"></span>Inclusive Teaching</div>
       <div class="module-chip"><span class="dot"></span>Assessment Methods</div>
       <div class="module-chip"><span class="dot"></span>Parent Communication</div>
+    </div>
+  </div>
+
+  <!-- Payment Section -->
+  <div class="payment-section">
+    <p class="section-title">💳 How to Pay</p>
+    <div class="payment-card">
+      <div class="payment-row">
+        <span class="payment-label">Payment Method</span>
+        <span class="payment-value">Easypaisa</span>
+      </div>
+      <div class="payment-divider"></div>
+      <div class="payment-row">
+        <span class="payment-label">Account Number</span>
+        <span class="payment-value highlight">0320 506 4744</span>
+      </div>
+      <div class="payment-divider"></div>
+      <div class="payment-row">
+        <span class="payment-label">Account Title</span>
+        <span class="payment-value">Shaista Rafeeq</span>
+      </div>
+    </div>
+    <div class="payment-note">
+      <span class="icon">📲</span>
+      <span>After payment, send a <strong>screenshot</strong> of the transaction to <strong>0370 051 2450</strong> on WhatsApp to receive your course access.</span>
     </div>
   </div>
 
